@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	var token = getToken();
-	var auth = encrypt(token);
+	//var token = getToken();
+	//var auth = encrypt(token);
 	var a = { "auth" : auth };
     $.ajax({
 		url: "http://localhost/bbter-all/index.php/Home/UserData/getUserData",
