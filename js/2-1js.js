@@ -179,7 +179,9 @@ $(document).ready(function(e){
 	$(".next").click(function(){
 		var token = getToken();
 		var auth = encrypt(token);
-		pagenow = pagenow + 1;
+		if (pageall!=pagenow){
+				pagenow = pagenow + 1;
+			}
 		var a = { "auth" : auth,"data" : {"kind":kind,"pagenow":pagenow,"eachpage":8} };
 	    $.ajax({
 			url: "http://222.201.132.27/bbter-all/index.php/Home/State/selectPitchState",
@@ -219,8 +221,9 @@ $(document).ready(function(e){
 	$(".last").click(function(){
 		var token = getToken();
 		var auth = encrypt(token);
-		var p = window.location.search;
-		pagenow = pagenow - 1;
+		if (pagenow>=2){ 
+			pagenow = pagenow - 1;
+		}
 		var a = { "auth" : auth,"data" : {"kind":kind,"pagenow":pagenow,"eachpage":8} };
 	    $.ajax({
 			url: "http://222.201.132.27/bbter-all/index.php/Home/State/selectPitchState",
