@@ -7,7 +7,7 @@ function getToken(){
 	}
 	else {
 		alert("出错了，请重新登陆");
-		window.location.href="";
+		window.location.href="http://222.201.132.27/crewManageEvolve";
 	}
 	//获取本地cookie中的token
 
