@@ -1,0 +1,186 @@
+.subContent{
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0 0 0 36px;
+}
+.frontWindow {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: fixed;
+	z-index: 5;
+	margin: -80px 0 0 0;
+}
+.mask {
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+	background-color: rgba(0,0,0,0.30);
+	position: absolute;
+}
+.subContentImg {
+	width: 16px;
+	margin: 18px -26px 0 24px;
+	cursor: pointer;
+}
+.attr {
+	margin: 0 36px 0 0;
+}
+.actName {
+	float: left;
+}
+.actTime {
+	color: rgba(0,0,0,0.30);
+	margin: 24px 0 0 0;
+}
+.actStatus,.actDescription,.actNumber {
+	color: rgba(0,0,0,0.30);
+	margin: 8px 0 0 0;
+}
+.subContentMid {
+	height: 108px;
+}
+.add {
+	width: 108px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 2px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.30); 
+	background-color: #6487ab;
+	color: white; 
+	float: left;
+	margin: 48px 16px 0 0;
+	cursor: pointer;
+}
+.submit {
+	width: 108px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 2px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.30); 
+	background-color: rgba(0,0,0,0.12);
+	float: left;
+	margin: 48px 0 0 0;
+	cursor: pointer;
+}
+.export {
+	width: 108px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 2px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.30); 
+	background-color: #6487ab;
+	color: white; 
+	float: left;
+	margin: 48px 16px 0 0;
+	cursor: pointer;
+}
+.subContentTable {
+	width: 620px;
+	background-color: #ffffff;
+	text-align: center;
+	border: 1px solid rgba(0,0,0,0.12);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	margin: 0 0 30px 0;
+}
+th {
+	height: 40px;
+	color: rgba(0,0,0,0.3);
+}
+td {
+	height: 40px;
+	border-top: 1px solid rgba(0,0,0,0.12);
+	cursor: pointer;
+}
+.trHover {
+	background-color: #ffffff;
+	transition-property: background-color;
+	transition-duration: 0.2s;
+	-webkit-transition-property: background-color;
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-property: background-color;\
+	-moz-transition-duration: 0.2s;
+	-o-transition-property: background-color;
+	-o-transition-duration: 0.2s;
+}
+.trHover:hover {
+	background-color: #f9f9f9;
+}
+.subContentDetailImg1 {
+	width: 16px;
+	position: absolute;
+	margin: 3px 5px 0 10px;
+	cursor: pointer;
+}
+.subContentDetailImg2 {
+	width: 16px;
+	position: absolute;
+	margin: 3px 0 0 30px;
+	cursor: pointer;
+}
+.windowContent {
+	width: 336px;
+	height: 276px;
+	opacity: 1;
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.26);
+	margin: auto;
+	position: relative;
+	z-index: 6;
+}
+.addHead {
+	position: relative;
+	top: 32px;
+	left: 24px;
+	color: rgba(0,0,0,0.6);
+}
+.addActName {
+	width: 288px;
+	position: relative;
+	top: 32px;
+	left: 24px;
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,0.6); 
+}
+.addDescription {
+	position: relative;
+	top: 64px;
+	left: 24px;
+	color: rgba(0,0,0,0.6);
+}
+.addActDescription {
+	width: 288px;
+	position: relative;
+	top: 64px;
+	left: 24px;
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,0.6); 
+}
+.windowSubmit {
+	color: white;
+	float: right;
+	width: 64px;
+	height: 32px;
+	line-height: 32px;
+	background-color: #6487ab;
+	text-align: center;
+	position: relative;
+	right: 24px;
+	top: 124px;
+	cursor: pointer;
+}
+.cancel {
+	float: right;
+	width: 64px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	position: relative;
+	right: 24px;
+	top: 124px;
+	cursor: pointer;
+}

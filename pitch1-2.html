@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>摆摊系统</title>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/sodium.min.js"></script>
+<script type="text/javascript" src="js/auth.js"></script>
+<script type="text/javascript" src="js/getToken.js"></script>
+<script type="text/javascript" src="js/1-2js.js"></script>
+<link rel="stylesheet" type="text/css" href="css/head.css">
+<link rel="stylesheet" type="text/css" href="css/pitch1-2.css">
+</head>
+<body>
+  <div class="head">
+        <div class="headContainer">
+            <img class="logo" src="img/logo.png">
+            <ul class="mainMenu">
+                <li class="more menuHover menuFirstBtn fontNormal">更多</li>
+                <img class="pointerDown" src="img/pointerDownWhite.png">
+                <li class="pitchArrage menuHover menuFirstBtn fontNormal" onclick="window.location.href='pitch3-1.html'">摆摊安排</li>
+                <li class="depaManage menuHover menuFirstBtn fontNormal" onclick="window.location.href='pitch2-1.html'">部门管理</li>
+                <li class="myMitch menuHover menuFirstBtn naviFirstBtnActive fontNormal" onclick="window.location.href='pitch1-1.html'">我的摆摊</li>
+            </ul>
+            <span class="naviLocation fontHuge">我的摆摊</span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="contentContainer">
+            <div class="sideBar">
+                <span class="subMenuSummary fontSmall">我的摆摊</span>
+                <ul class="subMenu">
+                    <li class="perImfor menuHover subMenuBtn fontNormal" onclick="window.location.href='pitch1-1.html'">
+                        个人资料
+                    </li>
+                    <li class="classTable menuHover subMenuBtn fontNormal" onclick="window.location.href='pitch1-2.html'">
+                        没课表
+                    </li>
+                </ul>
+            </div>
+            <div class="subContent">
+                <div class="subContentSummary">
+                    <div class="detail">
+                        <table class="tbhead">
+                            <tr>
+                                <th class="space">  </th>
+                                <th class="mon">周一</th>
+                                <th class="tues">周二</th>
+                                <th class="wed">周三</th>
+                                <th class="thurs">周四</th>
+                                <th class="fri">周五</th>
+                                <th class="sat">周六</th>
+                                <th class="sun">周日</th>
+                            </tr>
+                            <tr>
+                                <td class="course">一二节</td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="lastcol choose">  </td>
+                            </tr>
+                            <tr>
+                                <td class="course">三四节</td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="lastcol choose">  </td>
+                            </tr>
+                            <tr>
+                                <td class="course">五六节</td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="lastcol choose">  </td>
+                            </tr>
+                            <tr>
+                                <td class="course">七节</td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="lastcol choose">  </td>
+                            </tr>
+                            <tr>
+                                <td class="course">八节</td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="lastcol choose">  </td>
+                            </tr>
+                            <tr>
+                                <td class="course">晚上</td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="choose">  </td>
+                                <td class="lastcol choose">  </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="classStatus">
+                        <span class="tips">*点击该方块变为蓝色，代表该时间没课</span>
+                        <span class="val"></span>
+                        <span class="attr">课表状态：</span>
+                    </div>
+                    <div class="two-submit">
+                        <div class="reset">
+                            还原
+                        </div>
+                        <div class="submit">
+                              完成
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

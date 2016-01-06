@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>摆摊系统</title>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/sodium.min.js"></script>
+<script type="text/javascript" src="js/auth.js"></script>
+<script type="text/javascript" src="js/getToken.js"></script>
+<script type="text/javascript" src="js/3-2js.js"></script>
+<link rel="stylesheet" type="text/css" href="css/head.css">
+<link rel="stylesheet" type="text/css" href="css/pitch3-2.css">
+</head>
+<body>
+    <div class="frontWindow">
+        <div class="mask"></div>
+        <div class="windowContent">
+            <div class="addHead">标题</div>
+            <input class="addActName" type="text" />
+            <div class="addDescription">描述</div>
+            <input class="addActDescription" type="text" />
+            <div class="windowSubmit">完成</div>
+            <div class="cancel">取消</div>
+        </div>
+    </div>
+	<div class="head">
+        <div class="headContainer">
+            <img class="logo" src="img/logo.png">
+            <ul class="mainMenu">
+                <li class="more menuHover menuFirstBtn fontNormal">更多</li>
+                <img class="pointerDown" src="img/pointerDownWhite.png">
+                <li class="pitchArrage menuHover menuFirstBtn naviFirstBtnActive fontNormal" onclick="window.location.href='pitch3-1.html'">摆摊安排</li>
+                <li class="depaManage menuHover menuFirstBtn fontNormal" onclick="window.location.href='pitch2-1.html'">部门管理</li>
+                <li class="myMitch menuHover menuFirstBtn fontNormal" onclick="window.location.href='pitch1-1.html'" >我的摆摊</li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="contentContainer">
+        	 <div class="sideBar">
+                <span class="subMenuSummary fontSmall">摆摊安排</span>
+                <ul class="subMenu">
+                    <li class="selected menuHover subMenuBtn fontNormal" onclick="window.location.href='pitch3-1.html'">
+                        返回摆摊列表
+                    </li>
+                </ul>
+            </div>
+            <div class="subContent">
+                <div class="subContentHead">
+                    <div class="headBlock">
+                        <div class="actName fontHuge">
+                            XXXXX
+                        </div>
+                        <img class="subContentImg subContentImg1" src="img/edit.png">
+                        <img class="subContentImg subContentImg2" src="img/del.png">
+                    </div>
+                    <div class="actTime">
+                        <span class="attr fontNormal">创建时间：</span>
+                        <span class="val fontNormal">xxxx-xx-xx</span>
+                    </div>
+                    <div class="actStatus">
+                        <span class="attr fontNormal">发布状态：</span>
+                        <span class="val fontNormal">xxx</span>
+                    </div>
+                    <div class="actDescription">
+                        <span class="attr fontNormal">摆摊描述：</span>
+                        <span class="val fontNormal">--</span>
+                    </div>
+                    <div class="actNumber">
+                        <span class="attr fontNormal">活动数量：</span>
+                        <span class="val fontNormal">--</span>
+                    </div>
+                </div>
+                <div class="subContentMid">
+                    <div class="add">新增摆摊</div>
+                    <div class="submit">发布摆摊</div>
+                    <div class="export">导出名单</div>
+                </div>
+                <div class="subContentDetail">
+                    <table cellspacing="0" class="subContentTable">
+                        <tr>
+                            <th class="tbhead">日期</th>
+                            <th class="tbhead">时段</th>
+                            <th class="tbhead">地点</th>
+                            <th class="tbhead">人数</th>
+                            <th class="tbhead">负责人</th>
+                        </tr>
+                        <tr class="trHover block">
+                            <td class="subDate">xxxx-xx-xx周五</td>
+                            <td class="subTime">xx节</td>
+                            <td class="subPlace">x饭</td>
+                            <td class="subNumber">x</td>
+                            <td class="subCommander">xxx</td>
+                        </tr>
+                        <tr class="trHover block">
+                            <td class="subDate">xxxx-xx-xx周五</td>
+                            <td class="subTime">xx节</td>
+                            <td class="subPlace">x饭</td>
+                            <td class="subNumber">x</td>
+                            <td class="subCommander">xxx</td>
+                        </tr>
+                        <tr class="trHover block">
+                            <td class="subDate">xxxx-xx-xx周五</td>
+                            <td class="subTime">7节</td>
+                            <td class="subPlace">x饭</td>
+                            <td class="subNumber">x</td>
+                            <td class="subCommander">xxx</td>
+                        </tr>
+                        <tr class="trHover block">
+                            <td class="subDate">xxxx-xx-xx周五</td>
+                            <td class="subTime">56节</td>
+                            <td class="subPlace">x饭</td>
+                            <td class="subNumber">x</td>
+                            <td class="subCommander">xxx</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

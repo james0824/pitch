@@ -1,0 +1,129 @@
+.frontWindow {
+	display: none;
+	position: absolute;
+	z-index: 5;
+}
+.subContent{
+	position: relative;
+	display: block;
+	float: left;
+}
+.classTableConfirm {
+	color: #6487ab;
+}
+.subContentDetail {
+	position: relative;
+	display: block;
+	margin-left: 36px;
+	overflow: hidden;
+}
+.contentTable {
+	width: 620px;
+	background-color: #ffffff;
+	text-align: center;
+	border: 1px solid rgba(0,0,0,0.12);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+th {
+	height: 40px;
+	color: rgba(0,0,0,0.3);
+}
+.selectStatus {
+	cursor: pointer;
+}
+.contentPointerDown {
+	position: relative;
+	top: -3px;
+	left: 3px;
+}
+.option {
+	position: absolute;
+	left: 468px;
+	width: 85px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: white;
+	cursor: pointer;
+	display: none;
+}
+.option1 {
+	top: 40px;
+}
+.option2 {
+	top: 80px;
+}
+.option3 {
+	top: 120px;
+}
+.subContent td {
+	cursor: pointer;;
+	height: 40px;
+	border-top: 1px solid rgba(0,0,0,0.12);
+}
+.trHover {
+	background-color: #ffffff;
+	transition-property: background-color;
+	transition-duration: 0.2s;
+	-webkit-transition-property: background-color;
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-property: background-color;\
+	-moz-transition-duration: 0.2s;
+	-o-transition-property: background-color;
+	-o-transition-duration: 0.2s;
+}
+.trHover:hover {
+	background-color: #f9f9f9;
+	cursor: pointer;
+}
+.page {
+	float: right;
+	letter-spacing: 2px;
+	display: block;
+	margin: 48px 32px 0 0;
+}
+.last,.next {
+	height: 30px;
+	line-height: 30px;
+	width: 100px;
+	border-radius: 3px;
+	background-color: #6487ab;
+	color: white;
+	float: right;
+	margin: 40px 16px 0 0;
+	text-align: center;
+	cursor: pointer;
+}
+.next {
+	margin: 40px 10px 0 0;
+}
+.windowContent {
+	width: 230px;
+	height: 236px;
+	background-image: url(../img/schedule.png);
+	background-size: cover;
+	background-position: 50%;
+}
+.windowTable {
+	width: 220px;
+	height: 190px
+}
+.thisClassStatus {
+	position: relative;
+	left: 90px;
+	top: 12px;
+}
+.submit {
+	position: relative;
+	left: 90px;
+	top: 12px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.windowContent td {
+	background-color: rgba(106,144,182,1);
+	border: 1px solid rgba(0,0,0,0.12);
+	position: relative;
+	top: 22px;
+	left: 5px;
+}

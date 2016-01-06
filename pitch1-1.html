@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>摆摊系统</title>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/sodium.min.js"></script>
+<script type="text/javascript" src="js/auth.js"></script>
+<script type="text/javascript" src="js/getToken.js"></script>
+<script type="text/javascript" src="js/1-1js.js"></script>
+<link rel="stylesheet" type="text/css" href="css/head.css">
+<link rel="stylesheet" type="text/css" href="css/pitch1-1.css">
+</head>
+<body>
+	<div class="head">
+        <div class="headContainer">
+        	<img class="logo" src="img/logo.png">
+            <ul class="mainMenu">
+            	<li class="more menuHover menuFirstBtn fontNormal">更多</li>
+                <img class="pointerDown" src="img/pointerDownWhite.png">
+                <li class="pitchArrage menuHover menuFirstBtn fontNormal" onclick="window.location.href='pitch3-1.html'">摆摊安排</li>
+                <li class="depaManage menuHover menuFirstBtn fontNormal" onclick="window.location.href='pitch2-1.html'">部门管理</li>
+                <li class="myMitch menuHover menuFirstBtn naviFirstBtnActive fontNormal" onclick="window.location.href='pitch1-1.html'">我的摆摊</li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="contentContainer">
+            <div class="sideBar">
+                <span class="subMenuSummary fontSmall">我的摆摊</span>
+            	<ul class="subMenu">
+                	<li class="perImfor menuHover subMenuBtn fontNormal" onclick="window.location.href='pitch1-1.html'">
+                    	 个人资料
+                    </li>
+                    <li class="classTable menuHover subMenuBtn fontNormal" onclick="window.location.href='pitch1-2.html'">
+                    	没课表
+                    </li>
+                </ul>
+            </div>
+            <div class="subContent">
+            	<div class="subContentSummary">
+                	<img class="photo" src="img/photo.png">
+                    <div class="subContentContainer">
+                        <span class="name fontLarge"></span>
+                        <span class="position fontSmall"></span>
+                        <span class="department fontSmall"></span>
+                    </div>
+                </div>
+                <div class="subContentDetail">
+                	<div class="imfor">
+                    	<span class="detailHead fontSmall">个人信息</span>
+                        <div class="sex">
+                        	<span class="attr fontNormal">性别：</span>
+                            <span class="val fontNormal"></span>
+                        </div>
+                        <div class="tel">
+                        	<span class="attr fontNormal">长号：</span>
+                            <span class="val fontNormal"></span>
+                        </div>
+                        <div class="shortTel">
+                        	<span class="attr fontNormal">短号：</span>
+                            <span class="val fontNormal"></span>
+                        </div>
+                    </div>
+                    <div class="imfor pitchImfor">
+                        <span class="detailHead fontSmall">摆摊信息</span>
+                        <div class="classstatus">
+                            <span class="attr fontNormal">课表状态：</span>
+                            <span class="val fontNormal"></span>
+                        </div>
+                        <div class="pitchnumber">
+                            <span class="attr fontNormal">摆摊次数：</span>
+                            <span class="val fontNormal"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

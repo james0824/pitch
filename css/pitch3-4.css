@@ -1,0 +1,75 @@
+.subContent{
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0 0 0 36px;
+}
+.back {
+	color: #6487ab;
+}
+.subContentImg {
+	width: 16px;
+	margin: 0 -26px 0 24px;
+	cursor: pointer;
+}
+.attr {
+	margin: 0 36px 0 0;
+}
+.subPlace {
+	color: rgba(0,0,0,0.30);
+	margin: 24px 0 0 0;
+}
+.subNumber,.subNeededDepartment,.subNeededBoy,.subCommander {
+	color: rgba(0,0,0,0.30);
+	margin: 8px 0 0 0;
+}
+.subContentTable {
+	width: 620px;
+	background-color: #ffffff;
+	text-align: center;
+	border: 1px solid rgba(0,0,0,0.12);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	margin: 48px 0 30px 0;
+}
+th {
+	height: 40px;
+	color: rgba(0,0,0,0.3);
+}
+td {
+	height: 40px;
+	border-top: 1px solid rgba(0,0,0,0.12);
+	cursor: pointer;
+}
+.trHover {
+	background-color: #ffffff;
+	transition-property: background-color;
+	transition-duration: 0.2s;
+	-webkit-transition-property: background-color;
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-property: background-color;\
+	-moz-transition-duration: 0.2s;
+	-o-transition-property: background-color;
+	-o-transition-duration: 0.2s;
+}
+.trHover:hover {
+	background-color: #f9f9f9;
+}
+.subContentDetailImg1 {
+	width: 16px;
+	position: absolute;
+	margin: 3px 0 0 0;
+	cursor: pointer;
+}
+.subContentDetailImg2 {
+	width: 16px;
+	position: absolute;
+	margin: 3px 0 0 16px;
+	cursor: pointer;
+}
+.name {
+	width: 198px;
+}
+.departmant,.shortTel,.tel {
+	width: 120px;
+}
+

@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>摆摊系统</title>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/sodium.min.js"></script>
+<script type="text/javascript" src="js/auth.js"></script>
+<script type="text/javascript" src="js/getToken.js"></script>
+<script type="text/javascript" src="js/2-1js.js"></script>
+<link rel="stylesheet" type="text/css" href="css/head.css">
+<link rel="stylesheet" type="text/css" href="css/pitch2-1.css">
+</head>
+<body>
+    <div class="frontWindow">
+        <div class="windowContent">
+            <div class="windowHead">
+                <div class="thisClassStatus fontNormal">
+                    <span class="val">已通过</span>
+                </div>
+                <div class="submit fontNormal">
+                    允许通过    
+                </div>
+            </div>
+            <div class="windosDetail">
+                <table cellspacing="0" class="windowTable">
+                    <tr>
+                        <td class="choose">  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                    </tr>
+                    <tr>
+                        <td class="choose">  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                    </tr>
+                    <tr>
+                        <td class="choose">  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                    </tr>
+                    <tr>
+                        <td class="choose">  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                    </tr>
+                    <tr>
+                        <td class="choose">  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                    </tr>
+                    <tr>
+                        <td class="choose">  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                        <td class="choose" >  </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+	<div class="head">
+        <div class="headContainer">
+            <img class="logo" src="img/logo.png">
+            <ul class="mainMenu">
+                <li class="more menuHover menuFirstBtn fontNormal">更多</li>
+                <img class="pointerDown" src="img/pointerDownWhite.png">
+                <li class="pitchArrage menuHover menuFirstBtn fontNormal" onclick="window.location.href='pitch3-1.html'">摆摊安排</li>
+                <li class="depaManage menuHover menuFirstBtn naviFirstBtnActive fontNormal" onclick="window.location.href='pitch2-1.html'">部门管理</li>
+                <li class="myMitch menuHover menuFirstBtn fontNormal" onclick="window.location.href='pitch1-1.html'">我的摆摊</li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="contentContainer">
+        	<div class="sideBar">
+                <span class="subMenuSummary fontSmall">部门管理</span>
+                <ul class="subMenu">
+                    <li class="classTableConfirm menuHover subMenuBtn fontNormal" onclick="window.location.href='pitch2-1.html'">
+                         课表审核
+                    </li>
+                </ul>
+            </div>
+            <div class="subContent">
+                <div class="subContentDetail">
+                	<table cellspacing="0" class="contentTable">
+    					<tr class="contentTableTr">
+    						<th class="thattr">姓名</th>
+    						<th class="thattr">职位</th>
+    						<th class="thattr">摆摊次数</th>
+    						<th class="thattr selectStatus">课表状态
+                                <img class="contentPointerDown" src="img/pointerDown.png">
+                            </th>
+                            <div class="option1 trHover option">全部</div>
+                            <div class="option2 trHover option">未审核</div>
+                            <div class="option3 trHover option">已审核</div>
+    					</tr>
+                    </table>
+                    <div class="next fontNormal">下一页</div>
+                    <div class="last fontNormal">上一页</div>
+                    <span class="page fontSmall">共<span class="pageAll">-</span>页,第<span class="pageNow">-</span>页</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

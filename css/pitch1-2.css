@@ -1,0 +1,109 @@
+.subContent {
+	position: relative;
+	display: block;
+	float: left;
+}
+.subContentSummary {
+	margin-left: 100px;
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+.classTable {
+	color: #6487ab;
+}
+.choose {
+	width: 50px;
+	height: 50px;
+	background-color: rgba(234, 234, 234, 1);
+}
+.detail th,.course {
+	font-weight: normal;
+	font-size: 14px;
+	color: #6487ab;
+}
+.detail th {
+	padding-bottom: 10px;
+}
+.course {
+	padding-right: 10px;
+	text-align: right;
+	border-radius: 2px;
+}
+.classStatus {
+	margin-top: 10px;
+	margin-left: 60px;
+	font-size: 10px;
+	color: #6487ab；
+}
+.classStatus .attr {
+	margin-right: 50px;
+	float: right;
+	color: #000;
+}
+.classStatus .tips,.classStatus .val {
+	color: #CBCBCB
+}
+.two-submit {
+	margin-top: 40px;
+	margin-right: 20px;
+	float: right;
+	height: 30px;
+	/*	*/
+}
+.reset {
+	float: left;
+	height: 30px;
+	font-size: 14px;
+	text-decoration: underline;
+	line-height: 30px;
+	color: #CBCBCB;
+	cursor: pointer;
+}
+.submit {
+	margin-left: 20px;
+	float: left;
+	width: 60px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 2px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.30); 
+	background-color: #6487ab;
+	color: white; 
+	cursor: pointer;
+}
+.naviHover {
+	opacity: 1;
+	transition-property: opacity;
+	transition-duration: 0.2s;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-property: opacity;
+	-moz-transition-duration: 0.2s;
+	-o-transition-property: opacity;
+	-o-transition-duration: 0.2s;
+}
+.naviHover:hover {
+	opacity: 0.7;
+}
+.naviLocation {
+	color: rgba(255,255,255,1);
+	font-weight: 500;	
+}
+/*更多菜单*/
+.moreMenu {
+	border-radius: 2px;
+	background-color: #f9f9f9;
+	box-shadow: 0 4px 6px 1px rgba(0,0,0,0.26);
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 0.2s;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-property: opacity;
+	-moz-transition-duration: 0.2s;
+	-o-transition-property: opacity;
+	-o-transition-duration: 0.2s;
+}

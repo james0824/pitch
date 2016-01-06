@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>摆摊系统</title>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/sodium.min.js"></script>
+<script type="text/javascript" src="js/auth.js"></script>
+<script type="text/javascript" src="js/getToken.js"></script>
+<script type="text/javascript" src="js/3-3.2js.js"></script>
+<script type="text/javascript" src="js/calendar.js"></script>
+<link rel="stylesheet" type="text/css" href="css/head.css">
+<link rel="stylesheet" type="text/css" href="css/pitch3-3.1.css">
+</head>
+<body>
+    <div class="frontWindow">
+        <div class="windowContent">
+            <div class="windowHead">
+                <img class="pointerLeft" src="img/pointerLeft.png">
+                <div class="date">xxxx年xx月</div>
+                <img class="pointerRight" src="img/pointerRight.png">
+            </div>
+            <div class="windosDetail">
+                <table cellspacing="0" class="windowTable">
+                    <tr>
+                        <td class="tdhead fontSmall">日</td>
+                        <td class="tdhead fontSmall">一</td>
+                        <td class="tdhead fontSmall">二</td>
+                        <td class="tdhead fontSmall">三</td>
+                        <td class="tdhead fontSmall">四</td>
+                        <td class="tdhead fontSmall">五</td>
+                        <td class="tdhead fontSmall">六</td>
+                    </tr>
+                    <tr>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                    </tr>
+                    <tr>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                    </tr>
+                   <tr>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                    </tr>
+                   <tr>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                    </tr>
+                    <tr>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                    </tr>
+                    <tr>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                        <td class="day fontSmall"> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="head">
+        <div class="headContainer">
+            <img class="logo" src="img/logo.png">
+            <ul class="mainMenu">
+                <li class="more menuHover menuFirstBtn fontNormal">更多</li>
+                <img class="pointerDown" src="img/pointerDownWhite.png">
+                <li class="pitchArrage menuHover menuFirstBtn fontNormal naviFirstBtnActive" onclick="window.location.href='pitch3-1.html'">摆摊安排</li>
+                <li class="depaManage menuHover menuFirstBtn fontNormal" onclick="window.location.href='pitch2-1.html'">部门管理</li>
+                <li class="myMitch menuHover menuFirstBtn fontNormal" onclick="window.location.href='pitch1-1.html'">我的摆摊</li>
+            </ul>
+            <span class="topHead naviLocation fontHuge">摆摊安排</span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="contentContainer">
+            <div class="sideBar">
+                <span class="subMenuSummary fontSmall">摆摊安排</span>
+                <ul class="subMenu">
+                    <li class="back menuHover subMenuBtn fontNormal">
+                      返回摆摊详情
+                    </li>
+                </ul>
+            </div>
+            <div class="subContent">
+                <div class="subContentHead">
+                    <span class="fontHuge">修改摆摊</span>
+                    <span class="activityName fontHuge">xxxxx</span>
+                </div>
+                <div class="subContentDetail">
+                    <div class="subDate">
+                        <div class="attr fontSmall">日期</div>
+                        <div class="val inputValue fontLarge listInput">点击选择日期</div>
+                    </div>
+                    <div class="subTime">
+                        <div class="attr fontSmall">课时</div>
+                        <div class="val inputValue fontLarge listInput">一二节</div>
+                        <img class="img" src="img/pointerDown.png">
+                        <div class="option1 trHover option">一二节</div>
+                        <div class="option2 trHover option">三四节</div>
+                        <div class="option3 trHover option">五六节</div>
+                        <div class="option4 trHover option">七节</div>
+                        <div class="option5 trHover option">八节</div>
+                        <div class="option6 trHover option">晚上</div>
+                    </div>
+                    <div class="place">
+                        <div class="attr fontSmall">地点</div>
+                        <input placeholder="输入活动地点，例：一饭" class="val inputValue fontLarge listInput" />
+                    </div>
+                    <div class="neededNumber">
+                        <div class="attr fontSmall">人数</div>
+                        <input class="val inputValue fontLarge listInput"  placeholder="输入分配人数" />
+                    </div>
+                    <div class="commander">
+                        <div class="attr fontSmall">负责人 </div>
+                        <input class="val inputValue fontLarge listInput"  placeholder="输入负责人学号" />
+                    </div>
+                    <div class="neededDepartment">
+                        <div class="attr fontSmall">必须部门：</div>
+                        <div class="line">
+                            <div class="part">
+                                <div class="depa">编辑部</div>
+                                <img class="unchecked" src="img/unchecked.png">
+                                <img class="checked" src="img/checked.png">
+                            </div>
+                            <div class="part">
+                                <div class="depa">策划推广部</div>
+                                <img class="unchecked" src="img/unchecked.png">
+                                <img class="checked" src="img/checked.png">
+                            </div>
+                            <div class="part">
+                                <div class="depa">节目部</div>
+                                <img class="unchecked" src="img/unchecked.png">
+                                <img class="checked" src="img/checked.png">
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="part">
+                                <div class="depa">技术部</div>
+                                <img class="unchecked" src="img/unchecked.png">
+                                <img class="checked" src="img/checked.png">
+                            </div>
+                            <div class="part">
+                                <div class="depa">人力资源部</div>
+                                <img class="unchecked" src="img/unchecked.png">
+                                <img class="checked" src="img/checked.png">
+                            </div>
+                            <div class="part">
+                                <div class="depa">视频部</div>
+                                <img class="unchecked" src="img/unchecked.png">
+                                <img class="checked" src="img/checked.png">
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="part">
+                                <div class="depa">视觉设计部</div>
+                                <img class="unchecked" src="img/unchecked.png">
+                                <img class="checked" src="img/checked.png">
+                            </div>
+                            <div class="part">
+                                <div class="depa">综合新闻部</div>
+                                <img class="unchecked" src="img/unchecked.png">
+                                <img class="checked" src="img/checked.png">
+                            </div>
+                            <div class="part">
+                                <div class="depa">外联部</div>
+                                <img class="unchecked" src="img/unchecked.png">
+                                <img class="checked" src="img/checked.png">
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="part">
+                                <div class="depa">综合管理部</div>
+                                <img class="unchecked" src="img/unchecked.png">
+                                <img class="checked" src="img/checked.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boy">
+                        <div class="attr fontSmall">男生优先：</div>
+                        <div class="val">此次活动优先分配男生</div>
+                        <img class="unchecked boyunchecked" src="img/unchecked.png">
+                        <img class="checked boychecked" src="img/checked.png">
+                    </div>
+                    <div class="submit">完成</div>
+                    <div class="reset">清除</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

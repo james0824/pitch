@@ -1,0 +1,73 @@
+.subContent{
+	position: relative;
+	display: block;
+	float: left;
+}
+.subContentSummary {
+	position: relative;
+	display: block;
+	margin-left: 264px;
+	overflow: hidden;
+}
+.perImfor {
+	color: #6487ab;
+}
+.photo {
+	position: relative;
+	display: block;
+	float: left;
+	width: 64px;
+	height: 64px;
+	background: rgba(0,0,0,0.12);
+	border-radius: 50%
+}
+.subContentContainer {
+	position: relative;
+	display: block;
+	float: left;
+	margin-left: 16px;
+}
+.name {
+	font-size: 18px;
+	position: relative;
+	display: block;
+	margin: 7px 0 6px 0;
+}
+.position {
+	float: left;
+	position: relative;
+	display: block;
+	margin: 0 8px 0 0;
+}
+.department {
+	float: left;
+	position: relative;
+	display: block;
+}
+.subContentDetail {
+	position: relative;
+	display: block;
+	margin-top: 64px;	
+	margin-left: 96px;
+	overflow: hidden;
+}
+.imfor {
+	position: relative;
+	display: block;
+	float: left;
+}
+.imfor div {
+	position: relative;
+	display: block;
+	min-height: 20px;
+	margin: 0 0 12px 45px;
+	overflow: hidden;
+}
+.pitchImfor {
+	margin-left: 64px;
+}
+.detailHead {
+	display: block;;
+	color: #6487ab;
+	margin: 0 0 30px 45px;
+}
