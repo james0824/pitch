@@ -193,7 +193,6 @@ $(document).ready(function(e){
 					token = obj.token;
 					info = obj.info;
 					pageall = obj.data.pageall;
-					pagenow = obj.data.pagenow;//填充信息
 					pageeach = obj.data.pageeach;
 					scnumber = new Array();
 					$(".block").remove();
@@ -235,7 +234,6 @@ $(document).ready(function(e){
 					token = obj.token;
 					info = obj.info;
 					pageall = obj.data.pageall;
-					pagenow = obj.data.pagenow;//填充信息
 					pageeach = obj.data.pageeach;
 					scnumber = new Array();
 					$(".block").remove();
