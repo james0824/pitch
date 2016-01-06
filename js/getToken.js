@@ -4,7 +4,6 @@ function getToken(){
 	var k = 1;
 	var i = 0;
 	var t;
-	alert(a);
 	while (k){
 		var reg = new RegExp(a[i]);
 		if (reg.test("token")){
