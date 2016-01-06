@@ -5,7 +5,7 @@ $(document).ready(function() {
 	var a = { "auth" : auth };
 	var postdata = { data :JSON.stringify(a) };
     $.ajax({
-		url: "http://192.168.1.120/bbter/index.php/Home/UserData/getNoClassData",
+		url: "http://localhost/bbter-all/index.php/Home/UserData/getNoClassData",
 		type: "POST",
 		processData: "false",
 		contentType: "application/x-www-form-urlencoded",
@@ -78,7 +78,7 @@ $(document).ready(function() {
 		newclass = JSON.stringify(newclass);
 		a = { "auth" : auth,"data":{"noclass":newclass }};
 		$.ajax({
-			url: "http://192.168.1.120/bbter/index.php/Home/ModifyCourse/addDataToNewTable",
+			url: "localhost/bbter-all/index.php/Home/ModifyCourse/addDataToNewTable",
 			type: "POST",
 			processData: "false",
 			contentType: "application/x-www-form-urlencoded",

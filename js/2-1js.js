@@ -3,12 +3,12 @@ $(document).ready(function(e){
 	var token = getToken();
 	var auth = encrypt(token);
 	var p = window.location.search;
-	pagenow = 0;
+	var pagenow = 0;
 	var kind = "全部"
 	var a = { "auth" : auth,"data" : {"kind":kind,"pagenow":pagenow,"eachpage":8} };
 	var block = "<tr class='trHover block'><td class='name'></td><td class='position'></td><td class='pitchNumber'></td><td class='pitchStatus'></td></tr>"
     $.ajax({
-		url: "http://192.168.1.120/bbter/index.php/Home/State/selectPitchState",
+		url: "http://localhost/bbter-all/index.php/Home/State/selectPitchState",
 		type: "POST",
 		processData: "false",
 		contentType: "application/x-www-form-urlencoded",
@@ -52,7 +52,7 @@ $(document).ready(function(e){
 		var a = { "auth" : auth,"data" : {"kind":kind,"pagenow":pagenow,"eachpage":8} };
 		postdata = { data :JSON.stringify(a) };
 	    $.ajax({
-			url: "http://192.168.1.120/bbter/index.php/Home/State/selectPitchState",
+			url: "http://localhost/bbter-all/index.php/Home/State/selectPitchState",
 			type: "POST",
 			processData: "false",
 			contentType: "application/x-www-form-urlencoded",
@@ -110,7 +110,7 @@ $(document).ready(function(e){
 		var auth = encrypt(token);
 		a = { "auth" : auth,"data":{"scnumber":thisscnumber} };
 	    $.ajax({
-			url: "http://192.168.1.120/bbter/index.php/Home/UserData/getOtherPersonNoClassData",
+			url: "http://localhost/bbter-all/index.php/Home/UserData/getOtherPersonNoClassData",
 			type: "POST",
 			processData: "false",
 			contentType: "application/x-www-form-urlencoded",
@@ -162,7 +162,7 @@ $(document).ready(function(e){
 		thisscnumber = scnumber[index];
 		a = { "auth" : auth,"data":{"scnumber":thisscnumber} };
 	    $.ajax({
-			url: "http://192.168.1.120/bbter/index.php/Home/UserData/checkOtherPersonNoClassData",
+			url: "http://localhost/bbter-all/index.php/Home/UserData/checkOtherPersonNoClassData",
 			type: "POST",
 			processData: "false",
 			contentType: "application/x-www-form-urlencoded",
@@ -176,14 +176,13 @@ $(document).ready(function(e){
 			}
 		});
 	});//审核他人无课表
-	/*$(".next").click(function(){
+	$(".next").click(function(){
 		var token = getToken();
 		var auth = encrypt(token);
-		var p = window.location.search;
 		pagenow = pagenow + 1;
 		var a = { "auth" : auth,"data" : {"kind":kind,"pagenow":pagenow,"eachpage":8} };
 	    $.ajax({
-			url: "",
+			url: "http://localhost/bbter-all/index.php/Home/State/selectPitchState",
 			type: "POST",
 			processData: "false",
 			contentType: "application/x-www-form-urlencoded",
@@ -225,7 +224,7 @@ $(document).ready(function(e){
 		pagenow = pagenow - 1;
 		var a = { "auth" : auth,"data" : {"kind":kind,"pagenow":pagenow,"eachpage":8} };
 	    $.ajax({
-			url: "",
+			url: "http://localhost/bbter-all/index.php/Home/State/selectPitchState",
 			type: "POST",
 			processData: "false",
 			contentType: "application/x-www-form-urlencoded",
@@ -259,5 +258,5 @@ $(document).ready(function(e){
 				}
 			}
 		});
-	});*/
+	});
 });

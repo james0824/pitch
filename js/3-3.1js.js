@@ -55,7 +55,7 @@ $(document).ready(function(e){
 		id = id.toString();
 		var a = { "auth" : auth,"data":{"date":date,"time":time,"place":place,"neednumber":needednumber,"commander":commander,"needdepartment":neededdepartment,"boy":boy,"id":id }};
 		$.ajax({
-			url: "http://192.168.1.120/bbter/index.php/Home/SubActivity/addactivity",
+			url: "http://localhost/bbter-all/index.php/Home/SubActivity/addactivity",
 			type: "POST",
 			processData: "false",
 			contentType: "application/x-www-form-urlencoded",

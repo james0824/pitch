@@ -4,7 +4,7 @@ $(document).ready(function(){
 	var a = { "auth" : auth,"data" : {"kind":"全部"} };
 	block = "<div class='block'><p class='actName fontNormal'>活动名称</p><p class='actStatus fontSmall'>状态</p><p class='actTime fontSmall'>创建时间</p></div>";
     $.ajax({
-		url: "http://192.168.1.120/bbter/index.php/Home/Activity/obtainActivityList",
+		url: "http://localhost/bbter-all/index.php/Home/Activity/obtainActivityList",
 		type: "POST",
 		processData: "false",
 		contentType: "application/x-www-form-urlencoded",
