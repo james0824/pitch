@@ -7,7 +7,7 @@ $(document).ready(function(e){
 	block = "<tr class='trHover block'><td class='subDate'>xxxx-xx-xx周五</td><td class='subTime'>56节</td><td class='subPlace'>x饭</td><td class='subNumber'>x</td><td class='subCommander'>xxx</td></tr>"
 	var a = { "auth" : auth,"data":{"id":id} };
     $.ajax({
-		url: "http://localhost/bbter-all/index.php/Home/SubActivity/getSaByAct",
+		url: "http://222.201.132.27/bbter-all/index.php/Home/SubActivity/getSaByAct",
 		type: "POST",
 		processData: "false",
 		contentType: "application/x-www-form-urlencoded",
@@ -57,7 +57,7 @@ $(document).ready(function(e){
 		id = id.toString();
 		var a = { "auth" : auth,"data":{"id":id} };
 		$.ajax({
-			url: "http://localhost/bbter-all/index.php/Home/Activity/rmActivity",
+			url: "http://222.201.132.27/bbter-all/index.php/Home/Activity/rmActivity",
 			type: "POST",
 			processData: "false",
 			contentType: "application/x-www-form-urlencoded",
@@ -86,7 +86,7 @@ $(document).ready(function(e){
 		var description = $(".addActDescription").val();
 		var a = { "auth" : auth,"data":{"id":id,"name":name,"description":description} };
 		$.ajax({
-			url: "http://localhost/bbter-all/index.php/Home/Activity/editActivity",
+			url: "http://222.201.132.27/bbter-all/index.php/Home/Activity/editActivity",
 			type: "POST",
 			processData: "false",
 			contentType: "application/x-www-form-urlencoded",
@@ -121,7 +121,7 @@ $(document).ready(function(e){
 		var id =  subid[index];
 		a = { "auth" : auth,"data":{"id":id} };
 	    $.ajax({
-			url: "http://localhost/bbter-all/index.php/Home/SubActivity/rmSa",
+			url: "http://222.201.132.27/bbter-all/index.php/Home/SubActivity/rmSa",
 			type: "POST",
 			processData: "false",
 			contentType: "application/x-www-form-urlencoded",
@@ -168,7 +168,7 @@ $(document).ready(function(e){
 		a = { "auth" : auth,"data":{"id":id} };
 		postdata = { data :JSON.stringify(a) };
 	    $.ajax({
-			url: "http://localhost/bbter-all/index.php/Home/SubActivity/submit",
+			url: "http://222.201.132.27/bbter-all/index.php/Home/SubActivity/submit",
 			type: "POST",
 			processData: "false",
 			contentType: "application/x-www-form-urlencoded",

@@ -3,7 +3,7 @@ $(document).ready(function() {
 	var auth = encrypt(token);
 	var a = { "auth" : auth };
     $.ajax({
-		url: "http://localhost/bbter-all/index.php/Home/UserData/getUserData",
+		url: "http://222.201.132.27/bbter-all/index.php/Home/UserData/getUserData",
 		type: "POST",
 		processData: "false",
 		contentType: "application/x-www-form-urlencoded",

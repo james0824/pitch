@@ -7,7 +7,7 @@ $(document).ready(function(){
 	var a = { "auth" : auth,"data":{"id":id} };
 	block = "<tr class='trHover block'><td class='name'>xx</td><td class='position'>xx</td><td class='department'>xxxx部</td><td class='shortTel'>xxxxxx</td><td class='tel'>xxxxxxxxxxx</td></tr>"
     $.ajax({
-		url: "http://localhost/bbter-all/index.php/Home/SubActivity/getpublishsa",
+		url: "http://222.201.132.27/bbter-all/index.php/Home/SubActivity/getpublishsa",
 		type: "POST",
 		processData: "false",
 		contentType: "application/x-www-form-urlencoded",

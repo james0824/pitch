@@ -6,7 +6,7 @@ $(document).ready(function(e){
 	id = id.toString();
 	var a = { "auth" : auth,"data":{"id":id} };
 	$.ajax({
-			url: "http://localhost/bbter-all/index.php/Home/SubActivity/getpublishsa",
+			url: "http://222.201.132.27/bbter-all/index.php/Home/SubActivity/getpublishsa",
 			type: "POST",
 			processData: "false",
 			contentType: "application/x-www-form-urlencoded",
@@ -131,7 +131,7 @@ $(document).ready(function(e){
 		id = id.toString();
 		var a = { "auth" : auth,"data":{"date":date,"time":time,"place":place,"neednumber":needednumber,"commander":commander,"needdepartment":neededdepartment,"boy":boy,"id":id }};
 		$.ajax({
-			url: "http://localhost/bbter-all/index.php/Home/SubActivity/editactivity",
+			url: "http://222.201.132.27/bbter-all/index.php/Home/SubActivity/editactivity",
 			type: "POST",
 			processData: "false",
 			contentType: "application/x-www-form-urlencoded",
