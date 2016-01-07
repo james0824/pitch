@@ -41,6 +41,11 @@
 	float: right;
 	color: #000;
 }
+.classStatus .val {
+	position: relative;
+	right: 30px;
+	float: right;
+}
 .classStatus .tips,.classStatus .val {
 	color: #CBCBCB
 }

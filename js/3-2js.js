@@ -43,13 +43,13 @@ $(document).ready(function(e){
 			}//存储信息
 		}
 	});
-	$(".subContentImg1").click(function(){
+	$(".subContentImg1").click(function(e){
 		$(".addActName").val($(".actName").text());
 		$(".addActDescription").val($(".actDescription .val").text());
 		$(".frontWindow").slideToggle(400);
-		
+		e.stopPropagation();
 	});
-	$(".subContentImg2").click(function(){
+	$(".subContentImg2").click(function(e){
 		var token = getToken();
 		var auth = encrypt(token);
 		var p = window.location.search;
@@ -72,11 +72,13 @@ $(document).ready(function(e){
 				}
 			}
 		});
+		e.stopPropagation();
 	});
-	$(".cancel").click(function(){
+	$(".cancel").click(function(e){
 		$(".frontWindow").slideToggle(400);
+		e.stopPropagation();
 	});
-	$(".windowSubmit").click(function(){
+	$(".windowSubmit").click(function(e){
 		var token = getToken();
 		var auth = encrypt(token);
 		var p = window.location.search;
@@ -105,6 +107,13 @@ $(document).ready(function(e){
 				}
 			}
 		});
+		e.stopPropagation();
+	});
+	$(document).click(function(){
+		if($(".frontWindow").css("display")=="block")
+	        {
+				$(".frontWindow").toggle(200);
+			}
 	});
 	$(".subContentTable").on("mouseenter",".block",function(){
 		if (ifconfirm==0){
